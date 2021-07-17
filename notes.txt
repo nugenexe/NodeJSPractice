@@ -1,0 +1,9 @@
+ctrl k, ctrl f = auto format highlighted
+ctrl shift ` = open new powershell
+ctrl ` - switch to terminal or back to code
+windows home = only window not minimized
+ctrl , = settings
+
+
+POWERSHELL
+echo "# NodeJSPractice git" >> README.md

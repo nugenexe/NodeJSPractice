@@ -1,0 +1,41 @@
+node is written in c++
+nodejs uses v8 engine from google
+commonjs module wrapepr function
+JSON Schema used to dictate package.json rules
+
+--package.json 
+https://github.com/SchemaStore/schemastore/blob/master/src/schemas/json/package.json
+
+--modules
+jsmoduiles can import commonjs modules
+commonjs modules cannot require jsmodules
+https://pencilflip.medium.com/using-es-modules-with-commonjs-modules-in-node-js-1015786dab03
+https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1
+live binding, variable changes on another module cannot be seen by first module
+https://stackoverflow.com/questions/52211309/what-does-it-mean-by-live-bindings
+import 'what' = will only run what's in the module, no importing happens
+
+--node
+node index (without.js, but with mjs for commonjs )
+
+
+--NPM
+npm init: to create package.json
+npx eslint .\index.js
+
+const module = require('builtIn')
+const module = require('./NoBuiltIn')
+
+
+-- ESLIST
+https://airbnb.io/javascript/#arrays airbnb 
+
+--TSC
+npx tsc --init =to generate tsconfig.json
+
+--Angular
+Auto added configs for Ng including ignoring Node_Modules
+https://stackoverflow.com/questions/37187092/angular2-gitignore/37187110#37187110
+
+--GIT
+git add .
