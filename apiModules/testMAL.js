@@ -70,7 +70,11 @@ let response = await fetch(userAnimeListURL)
         }
     })
 
+const FOO = 'asdf';
+
 console.log('hello');
+
+
 
 // .catch(err => console.log(err)); // todo test if errors are normally logged to console
 
