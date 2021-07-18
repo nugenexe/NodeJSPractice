@@ -3,10 +3,6 @@ enum AnimeListStatus {
     COMPLETED = 2,
 }
 
-var foo1 = "";
-
-console.log("asdf");
-
 
 export class MALAPIService {
 
