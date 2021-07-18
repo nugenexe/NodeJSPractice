@@ -11,3 +11,7 @@ echo "# NodeJSPractice git" >> README.md
 
 Creating Const file
 https://stackoverflow.com/questions/8595509/how-do-you-share-constants-in-nodejs-modules
+
+
+--Design Patterns
+principle of least privilege
