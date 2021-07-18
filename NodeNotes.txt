@@ -30,6 +30,7 @@ const module = require('./NoBuiltIn')
 -- ESLIST
 https://airbnb.io/javascript/#arrays airbnb 
 
+
 --TSC
 npx tsc --init =to generate tsconfig.json
 

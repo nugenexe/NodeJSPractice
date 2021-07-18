@@ -7,6 +7,6 @@
 	"settings": {
 		"workbench.preferredDarkColorTheme": "Default Light+",
 		"workbench.editor.wrapTabs": true,
-		"debug.javascript.autoAttachFilter": "always"
+		// "debug.javascript.autoAttachFilter": "always"
 	}
 }
