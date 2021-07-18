@@ -40,3 +40,6 @@ https://stackoverflow.com/questions/37187092/angular2-gitignore/37187110#3718711
 
 --GIT
 git add .
+git diff = finds all changes (press q to exit, h for help)
+git commit -a = adds to stage for commit
+git commit -am = stage and message
