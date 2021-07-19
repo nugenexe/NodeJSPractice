@@ -4,7 +4,8 @@
   "description": "learning the ways of node",
   "main": "index.js",
   "scripts": {
-    "test": "wat"
+    "test": "wat",
+    "start": "node ."
   },
   "type": "module",
   "author": "",

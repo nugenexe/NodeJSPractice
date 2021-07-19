@@ -23,6 +23,7 @@ node -v
 --NPM
 npm init: to create package.json
 npx eslint .\index.js
+npm run start
 
 const module = require('builtIn')
 const module = require('./NoBuiltIn')
