@@ -17,6 +17,7 @@ import 'what' = will only run what's in the module, no importing happens
 
 --node
 node index (without.js, but with mjs for commonjs )
+node -v
 
 
 --NPM

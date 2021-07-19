@@ -2,6 +2,12 @@
 // import Person1 from './person.cjs';
 // import './apiModules/testMAL.js'
 
+// // console.log(process.env) 
+// console.log(process.env.USER)
+// console.log(process.platform)
+// console.log(process)
+
+
 // testingDynamicImports()
 var testingDynamicImports = () => {
     import('./modules/duplicates.js')
@@ -21,3 +27,10 @@ var testingDynamicImports = () => {
 // // This doesn't import anything and just runs side effects
 // import './apiModules/testMAL.js'
 import './apiModules/malService.js'
+
+process.on('exit', foo => {
+    console.log(`exit Event = ${foo}`)
+})
+
+import './testing/eventEmitters.js';
+import './testing/filesSystem.js';
