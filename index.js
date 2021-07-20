@@ -38,7 +38,7 @@ var testingDynamicImports = () => {
 import expImp from 'express';
 
 let exp = expImp()
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 exp.listen(PORT, () => {
     console.log('HELLooooo')
