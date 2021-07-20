@@ -38,7 +38,7 @@ var testingDynamicImports = () => {
 import expImp from 'express';
 
 let exp = expImp()
-const PORT = 3100;
+const PORT = 8080;
 
 exp.listen(PORT, () => {
     console.log('HELLooooo')
@@ -48,6 +48,12 @@ exp.get('/wat', (req, res) => {
     res.status(200).send({
         hi: 'world',
         issa: 'me'
+    })
+
+})
+exp.get('/', (req, res) => {
+    res.status(200).send({
+        hi: 'wor'
     })
 
 })
