@@ -28,5 +28,6 @@ console.log(`POP = ${await bar}`)
 
 const envSync = readFileSync('./.env', 'utf8')
 // let splited = envSync.split(/\r?\n/);
+console.log(envSync);
 let splited = JSON.parse(envSync);
 console.log(`MALCLIENTID = ${splited.MALCLIENTID}, MALSECRETID = ${splited.MALCLIENTSECRET}`)

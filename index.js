@@ -24,13 +24,32 @@ var testingDynamicImports = () => {
 
 }
 
-// // This doesn't import anything and just runs side effects
-// import './apiModules/testMAL.js'
-import './apiModules/malService.js'
+// // // This doesn't import anything and just runs side effects
+// // import './apiModules/testMAL.js'
+// import './apiModules/malService.js'
 
-process.on('exit', foo => {
-    console.log(`exit Event = ${foo}`)
+// process.on('exit', foo => {
+//     console.log(`exit Event = ${foo}`)
+// })
+
+// import './testing/eventEmitters.js';
+// import './testing/filesSystem.js';
+
+import expImp from 'express';
+
+let exp = expImp()
+const PORT = 3100;
+
+exp.listen(PORT, () => {
+    console.log('HELLooooo')
 })
 
-import './testing/eventEmitters.js';
-import './testing/filesSystem.js';
+exp.get('/wat', (req, res) => {
+    res.status(200).send({
+        hi: 'world',
+        issa: 'me'
+    })
+
+})
+
+
