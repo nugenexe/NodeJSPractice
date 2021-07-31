@@ -44,10 +44,12 @@ exp.listen(PORT, () => {
     console.log('HELLooooo')
 })
 
-exp.get('/wat', (req, res) => {
+exp.get('/wat/:id?', (req, res) => {
+    const {id} = req.params
     res.status(200).send({
         hi: 'world',
-        issa: 'me'
+        issa: 'me',
+        id: id
     })
 
 })
@@ -56,6 +58,13 @@ exp.get('/', (req, res) => {
         hi: 'wor'
     })
 
+})
+exp.post('/postTest/:id', (req, res) => {
+    const {id} = req.params
+    res.status(200).send({
+        issa: 'me',
+        id: id
+    })
 })
 
 
